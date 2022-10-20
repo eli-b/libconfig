@@ -8,7 +8,7 @@ string(REGEX REPLACE ${VERSION_REGEX} "\\1" VERSION_STRING "${VERSION_STRING}")
 
 project(libconfig LANGUAGES C VERSION ${VERSION_STRING})
 option(BUILD_EXAMPLES "Enable examples" ON)
-option(BUILD_SHARED_LIBS  "Enable shared library" ON)
+option(BUILD_SHARED_LIBS  "Enable shared library" OFF)
 option(BUILD_TESTS "Enable tests" ON)
 option(BUILD_FUZZERS "Enable fuzzers" OFF)
 option(BUILD_CXX "Build the C++ library in addition to the C library" ON)
